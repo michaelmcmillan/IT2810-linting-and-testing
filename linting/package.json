@@ -1,14 +1,19 @@
 {
-  "name": "testing_and_linting",
+  "name": "linting",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./**"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^3.1.2"
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
   }
 }
