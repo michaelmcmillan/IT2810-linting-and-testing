@@ -1,6 +1,6 @@
 const assert = require('assert');
-const Tweet = require('../tweet');
-const extractPlacesFromTweet = require('../extractPlacesFromTweet');
+const Tweet = require('../src/tweet');
+const extractPlacesFromTweet = require('../src/extractPlacesFromTweet');
 
 describe('extractPlacesFromTweet', () => {
   it('should extract "Brugata" from a Tweet referencing Brugata', () => {
