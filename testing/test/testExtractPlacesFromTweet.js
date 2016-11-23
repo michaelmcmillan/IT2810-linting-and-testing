@@ -5,13 +5,13 @@ const extractPlacesFromTweet = require('../src/extractPlacesFromTweet');
 describe('ExtractPlacesFromTweet', () => {
 
   xit('should extract "Brugata" given a tweet containing it', () => {
-      const tweet = new Tweet(
-        'To personer har blitt frastjålet gjenstander i Brugata. ' +
-        'Gj. person ble sprayet med forssvarsspray i ansiktet. Vi ' + 
-        'ser etter en rødmalt mann.'
-      );
-     const places = extractPlacesFromTweet(tweet);
-     assert.deepEqual(places, ['Brugata']);
+    const tweet = new Tweet(
+      'To personer har blitt frastjålet gjenstander i Brugata. ' +
+      'Gj. person ble sprayet med forssvarsspray i ansiktet. Vi ' + 
+      'ser etter en rødmalt mann.'
+    );
+    const places = extractPlacesFromTweet(tweet);
+    assert.deepEqual(places, ['Brugata']);
   });
 
   xit('should return "Holmenkollveien" & "Frognerveien" given a Tweet with both', () => {
