@@ -1,6 +1,4 @@
 const assert = require('assert');
-const Tweet = require('../src/tweet');
-const extractPlacesFromTweet = require('../src/extractPlacesFromTweet');
 
 describe('ExtractPlacesFromTweet', () => {
 
