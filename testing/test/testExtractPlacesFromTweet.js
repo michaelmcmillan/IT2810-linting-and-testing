@@ -34,16 +34,6 @@ describe('ExtractPlacesFromTweet', () => {
     assert.deepEqual(places, ['Holmenkollveien', 'Brugata']);
   });
 
-  xit('should return "Brugata" & "Holmenkollveien" capitalized if they are lowercased', () => {
-    const tweet = new Tweet(
-      'Politiet er på vei til holmenkollveien, nesten oppe ved ' + 
-      'brugata hvor en bil skal ha kjøt ut i grøfta. Skal ' + 
-      'ikke være personskade.'
-    );
-    const places = extractPlacesFromTweet(tweet);
-    assert.deepEqual(places, ['Holmenkollveien', 'Brugata']);
-  });
-
   xit('should return "Brugata 62" if street number is in Tweet', () => {
     const tweet = new Tweet(
       'Politiet er på vei til Brugata 62.'
