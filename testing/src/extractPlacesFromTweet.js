@@ -12,7 +12,7 @@ function isNumeric(word) {
 
 function combineWordsWithTrailingNumbers(word, index, words) {
   const nextWord = words[index + 1];
-  return isNumeric(nextWord) ? word + ' ' + nextWord : word;
+  return isNumeric(nextWord) ? [word, nextWord].join(' ') : word;
 }
 
 function extractPlacesFromTweet(tweet) {
